@@ -52,7 +52,7 @@
 
         {{-- Logo --}}
         <div class="flex justify-center py-6">
-            <img src="{{ asset('images/logo-ufhb.png') }}"
+            <img src="{{ asset('images/logo-ufhb_blanc.png') }}"
                  alt="UFHB"
                  class="h-16 opacity-80">
         </div>

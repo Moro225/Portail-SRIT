@@ -38,7 +38,10 @@
                     <a href="">
                         <div class="relative bg-white border border-[#162819] rounded-lg shadow p-6 transition-all duration-300 hover:-translate-y-2 hover:bg-[#162819] hover:text-white group" data-aos="fade-up" data-aos-duration="1000">
                             <div class="absolute -top-4 -left-4 bg-[#3C9E5D] p-2 rounded-full shadow">
-                                <img src="assets/images/maintenance.png" alt="Maintenance" class="w-8 h-8">
+                                <img src="{{ asset('images/' . $activite['img']) }}"
+                                    alt="{{ $activite['title'] }}"
+                                    class="w-8 h-8"
+                                >
                             </div>
                             <h3 class="text-xl font-semibold text-[#162819] mb-2 mt-4 group-hover:text-white">{{ $activite['title'] }}</h3>
                             <p class="text-gray-600 group-hover:text-white">
