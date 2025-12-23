@@ -1,23 +1,26 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Admin\DemandeInterventionController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('public.home');
-})->name('home');
 
-Route::get('/cellules', function () {
-    return view('public.cellules');
-})->name('cellules');
 
-Route::get('/demande_intervention', function () {
-    return view('public.demande-intervention');
-})->name('demande.intervention');
+Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    })->name('dashboard');
+
+    Route::get('/demandes', [DemandeInterventionController::class, 'index'])
+        ->name('demandes.index');
+
+    Route::get('/demandes/{demande}', [DemandeInterventionController::class, 'show'])
+        ->name('demandes.show');
+
+    Route::patch('/demandes/{demande}/statut', [DemandeInterventionController::class, 'updateStatut'])
+        ->name('demandes.updateStatut');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

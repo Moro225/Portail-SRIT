@@ -24,18 +24,18 @@
 
             @php
                 $activites = [
-                    ['title' => 'Maintenance Informatique', 'link' => '#', 'desc' => 'Assurer le bon fonctionnement et la réparation des équipements informatiques de l’Université.', 'img' => 'maintenance.png'],
-                    ['title' => 'Développement web', 'link' => '#', 'desc' => 'Créer et maintenir les sites et applications web pour les différents services de l’Université.', 'img' => 'dev_web.png'],
-                    ['title' => 'Réseau & Système', 'link' => '#', 'desc' => 'Gérer le réseau et l’accès aux ressources informatiques de l’Université.', 'img' => 'res_sys.png'],
-                    ['title' => 'Sécurité Informatique', 'link' => '#', 'desc' => 'Garantir la protection des données et des systèmes informatiques de l’UFHB.', 'img' => 'secure.png'],
-                    ['title' => 'Formations', 'link' => '#', 'desc' => 'Organisation de sessions de formation pour le personnel administratif et technique.', 'img' => 'formations.png'],
-                    ['title' => 'Gestion', 'link' => '#', 'desc' => 'Gérer l’inventaire, l’entretien et la distribution des équipements informatiques.', 'img' => 'gestion.png'],
+                    ['title' => 'Maintenance Informatique', 'link' => '#maintenance', 'desc' => 'Assurer le bon fonctionnement et la réparation des équipements informatiques de l’Université.', 'img' => 'maintenance.png'],
+                    ['title' => 'Développement web', 'link' => '#developpement', 'desc' => 'Créer et maintenir les sites et applications web pour les différents services de l’Université.', 'img' => 'dev_web.png'],
+                    ['title' => 'Réseau & Système', 'link' => '#reseau', 'desc' => 'Gérer le réseau et l’accès aux ressources informatiques de l’Université.', 'img' => 'res_sys.png'],
+                    ['title' => 'Sécurité Informatique', 'link' => '#securite', 'desc' => 'Garantir la protection des données et des systèmes informatiques de l’UFHB.', 'img' => 'secure.png'],
+                    ['title' => 'Formations', 'link' => '#formation', 'desc' => 'Organisation de sessions de formation pour le personnel administratif et technique.', 'img' => 'formations.png'],
+                    ['title' => 'Gestion', 'link' => '#gestion', 'desc' => 'Gérer l’inventaire, l’entretien et la distribution des équipements informatiques.', 'img' => 'gestion.png'],
                 ];
             @endphp
 
             @foreach($activites as $activite)
                 <div class="flex justify-center">
-                    <a href="">
+                    <a href="{{ route('cellules') }}{{ $activite['link'] }}">
                         <div class="relative bg-white border border-[#162819] rounded-lg shadow p-6 transition-all duration-300 hover:-translate-y-2 hover:bg-[#162819] hover:text-white group" data-aos="fade-up" data-aos-duration="1000">
                             <div class="absolute -top-4 -left-4 bg-[#3C9E5D] p-2 rounded-full shadow">
                                 <img src="{{ asset('images/' . $activite['img']) }}"
