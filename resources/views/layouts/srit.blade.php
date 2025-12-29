@@ -12,11 +12,11 @@
 
     {{-- Sidebar --}}
     <aside class="w-64 bg-green-900 text-white flex flex-col">
-        <div class="p-6 text-xl font-bold">
-            SRIT<br>Manager
+        <div class="p-6 text-xl font-bold text-center">
+            SRIT Manager
         </div>
 
-        <nav class="flex-1 space-y-1 px-4">
+        <nav class="flex-1 space-y-4 px-4 mt-6">
             <a href="{{ route('agent.dashboard') }}"
                class="block py-2 px-3 rounded hover:bg-green-800">
                 Tableau de bord

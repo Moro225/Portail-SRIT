@@ -20,11 +20,11 @@
     <div class="grid grid-cols-3 gap-4 text-center">
         <div>
             <strong>Nom :</strong><br>
-            {{ auth()->user()->nom ?? 'User' }}
+            {{ auth()->user()->firstName }}
         </div>
         <div>
             <strong>Prénoms :</strong><br>
-            {{ auth()->user()->prenoms ?? 'Example' }}
+            {{ auth()->user()->lastName }}
         </div>
         <div>
             <strong>Email :</strong><br>
