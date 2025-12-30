@@ -14,27 +14,27 @@
     {{-- Sidebar --}}
     <aside class="w-64 bg-[#162819] text-white flex flex-col">
         <div class="p-6 text-xl font-bold text-center">
-            SRIT Manager
+            SRIT - UFHB
         </div>
 
-        <nav class="flex-1 space-y-4 px-4 mt-6">
+        <nav class="flex-1 space-y-4 px-4 md:mt-12">
             <a href="{{ route('agent.dashboard') }}"
-               class="block py-2 px-3 rounded hover:bg-green-800">
+               class="block py-2 px-3 rounded hover:bg-green-800 border-b-1 border-b-green-500">
                 Tableau de bord
             </a>
 
             <a href="{{ route('agent.absences.index') }}"
-               class="block py-2 px-3 rounded hover:bg-green-800">
+               class="block py-2 px-3 rounded hover:bg-green-800 border-b-1 border-b-green-500">
                 Mes demandes
             </a>
 
             <a href="{{ route('agent.documents.index') }}"
-               class="block py-2 px-3 rounded hover:bg-green-800">
+               class="block py-2 px-3 rounded hover:bg-green-800 border-b-1 border-b-green-500">
                 Mes documents
             </a>
 
             <a href="#"
-               class="block py-2 px-3 rounded hover:bg-green-800">
+               class="block py-2 px-3 rounded hover:bg-green-800 border-b-1 border-b-green-500">
                 Mon compte
             </a>
         </nav>
@@ -58,7 +58,7 @@
         {{-- Informations utilisateurs --}}
         <div class="bg-[#3C9E5D] text-white p-6 rounded-md mb-4 text-center shadow-lg">
             <h2 class="text-xl font-bold">
-                SERVICE DES RESSOURCES INFORMATIQUES ET TECHNOLOGIQUES
+                SERVICE DES RESSOURCES INFORMATIQUES ET TECHNOLOGIQUES - UFHB
             </h2>
             <p class="mt-2">
                 01 41 04 14 49 | contact.srit@ufhb.edu.ci

@@ -47,4 +47,22 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    /**
+     * Check if the user has a specific role.
+     */
+    public function isAgent()
+    {
+        return $this->role === 'agent';
+    }
+
+    public function isChef()
+    {
+        return $this->role === 'chef';
+    }
+
+    public function isAdmin()
+    {
+        return $this->role === 'admin';
+    }
 }

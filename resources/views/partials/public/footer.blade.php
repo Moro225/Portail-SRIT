@@ -8,10 +8,10 @@
             <div>
                 <h3 class="font-semibold mb-4 uppercase">À propos</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:underline">Historique</a></li>
-                    <li><a href="#" class="hover:underline">Organisation</a></li>
-                    <li><a href="#" class="hover:underline">Stratégie / Grands projets</a></li>
-                    <li><a href="#" class="hover:underline">Missions / Vision / Valeurs</a></li>
+                    <li><a href="https://w.univ-fhb.edu.ci/luniversite-fhb/#histoire" class="hover:underline">Historique</a></li>
+                    <li><a href="https://w.univ-fhb.edu.ci/luniversite-fhb/#organisation" class="hover:underline">Organisation</a></li>
+                    <li><a href="http://portail-srit.test/#" class="hover:underline">Stratégie / Grands projets</a></li>
+                    <li><a href="http://portail-srit.test/#" class="hover:underline">Missions / Vision / Valeurs</a></li>
                 </ul>
             </div>
 
@@ -19,10 +19,10 @@
             <div>
                 <h3 class="font-semibold mb-4 uppercase">Formation</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:underline">Les UFR</a></li>
-                    <li><a href="#" class="hover:underline">Programmes</a></li>
-                    <li><a href="#" class="hover:underline">École / Chaire</a></li>
-                    <li><a href="#" class="hover:underline">Insertion Professionnelle</a></li>
+                    <li><a href="https://w.univ-fhb.edu.ci/ufr-ufhb/" class="hover:underline">Les UFR</a></li>
+                    <li><a href="https://w.univ-fhb.edu.ci/formation/#domaines_de_formations" class="hover:underline">Programmes</a></li>
+                    <li><a href="https://w.univ-fhb.edu.ci/formation/#cufop" class="hover:underline">École / Chaire</a></li>
+                    <li><a href="https://w.univ-fhb.edu.ci/formation/#insertion_professionnelle" class="hover:underline">Insertion Professionnelle</a></li>
                 </ul>
             </div>
 
@@ -30,10 +30,10 @@
             <div>
                 <h3 class="font-semibold mb-4 uppercase">Recherche</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:underline">Centres et instituts</a></li>
-                    <li><a href="#" class="hover:underline">Pôles scientifiques</a></li>
-                    <li><a href="#" class="hover:underline">Formations doctorales</a></li>
-                    <li><a href="#" class="hover:underline">Revues scientifiques</a></li>
+                    <li><a href="https://w.univ-fhb.edu.ci/recherches-innovations/#centre" class="hover:underline">Centres et instituts</a></li>
+                    <li><a href="https://w.univ-fhb.edu.ci/le-pole-scientifique-et-dinnovation/" class="hover:underline">Pôles scientifiques</a></li>
+                    <li><a href="https://w.univ-fhb.edu.ci/recherches-innovations/#doctorales" class="hover:underline">Formations doctorales</a></li>
+                    <li><a href="https://w.univ-fhb.edu.ci/recherches-innovations/#educi" class="hover:underline">Revues scientifiques</a></li>
                 </ul>
             </div>
 
@@ -41,10 +41,10 @@
             <div>
                 <h3 class="font-semibold mb-4 uppercase">Actualités</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:underline">News</a></li>
-                    <li><a href="#" class="hover:underline">Agenda</a></li>
-                    <li><a href="#" class="hover:underline">Communiqués</a></li>
-                    <li><a href="#" class="hover:underline">Documents officiels</a></li>
+                    <li><a href="https://w.univ-fhb.edu.ci/actualites/news/" class="hover:underline">News</a></li>
+                    <li><a href="https://w.univ-fhb.edu.ci/actualites/agenda/" class="hover:underline">Agenda</a></li>
+                    <li><a href="https://w.univ-fhb.edu.ci/actualites/communiques/" class="hover:underline">Communiqués</a></li>
+                    <li><a href="https://w.univ-fhb.edu.ci/documents-officiels" class="hover:underline">Documents officiels</a></li>
                 </ul>
             </div>
 

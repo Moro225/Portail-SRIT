@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DemandeInterventionController;
+use App\Http\Controllers\Admin\AbsenceValidationController;
 
 Route::middleware(['web', 'auth'])
     ->prefix('admin')
@@ -20,4 +21,19 @@ Route::middleware(['web', 'auth'])
 
         Route::patch('/demandes/{demande}/statut', [DemandeInterventionController::class, 'updateStatut'])
             ->name('demandes.updateStatut');
-    });
+});
+
+Route::middleware(['web', 'auth', 'chefOrAdmin'])
+    ->prefix('admin')
+    ->name('admin.')
+    ->group(function () {
+
+        Route::get('/absences', [AbsenceValidationController::class, 'index'])
+            ->name('absences.index');
+
+        Route::patch('/absences/{absence}/valider', [AbsenceValidationController::class, 'valider'])
+            ->name('absences.valider');
+
+        Route::patch('/absences/{absence}/rejeter', [AbsenceValidationController::class, 'rejeter'])
+            ->name('absences.rejeter');
+});

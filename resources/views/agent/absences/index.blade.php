@@ -42,11 +42,11 @@
         <tbody>
             @forelse($absences as $absence)
                 <tr class="border-t">
-                    <td class="p-3">{{ $absence->date_debut }}</td>
-                    <td class="p-3">{{ $absence->date_fin }}</td>
-                    <td class="p-3">{{ $absence->motif }}</td>
-                    <td class="p-3">
-                        <span class="px-2 py-1 rounded text-sm
+                    <td class="p-3 text-center">{{ $absence->date_debut }}</td>
+                    <td class="p-3 text-center">{{ $absence->date_fin }}</td>
+                    <td class="p-3 text-center">{{ $absence->motif }}</td>
+                    <td class="p-3 text-center">
+                        <span class="px-2 text-center py-1 rounded text-sm
                             @if($absence->statut === 'en_attente') text-yellow-700
                             @elseif($absence->statut === 'validee') text-green-700
                             @else text-red-700 @endif">

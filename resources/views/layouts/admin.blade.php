@@ -8,13 +8,13 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-gray-100">
+<body class="bg-[#E7EEEA]">
 
 <div class="min-h-screen flex">
 
     {{-- Sidebar --}}
-    <aside class="w-64 bg-white shadow-md hidden md:block">
-        <div class="p-6 font-bold text-lg text-green-700">
+    <aside class="w-64 bg-[#162819] text-white flex flex-col">
+        <div class="p-6 font-bold text-lg">
             SRIT - UFHB
         </div>
 
@@ -26,7 +26,12 @@
 
             <a href="{{ route('admin.demandes.index') }}"
                class="block px-6 py-3 hover:bg-green-50">
-                Demandes
+                Demandes interventions
+            </a>
+
+            <a href="{{ route('admin.absences.index') }}"
+               class="block px-6 py-3 hover:bg-green-50">
+                Demandes absences
             </a>
         </nav>
     </aside>
